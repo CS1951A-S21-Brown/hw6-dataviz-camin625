@@ -1,4 +1,3 @@
-console.log("HERE");
 // Add your JavaScript code here
 const MAX_WIDTH = Math.max(1080, window.innerWidth);
 const MAX_HEIGHT = 720;
