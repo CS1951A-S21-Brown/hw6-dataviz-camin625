@@ -15,14 +15,91 @@
     <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
     <div class="row">
         <div class="col-lg-6">
-            <div id="graph1"></div>
+            <div id="graph1">
+                <h3>Hover for Count!</h3>
+            </div>
             <div id="graph2"></div><br/>
+            <btndiv class="btndiv">
+                <button type="button" class="btn btn-info" onclick="setData(5)">Top 5</button>
+                <button type="button" class="btn btn-info" onclick="setData(10)">Top 10</button>
+                <button type="button" class="btn btn-info" onclick="setData(15)">Top 15</button>
+                <button type="button" class="btn btn-info" onclick="setData(20)">Top 20</button>
+                <button type="button" class="btn btn-info" onclick="setData(25)">Top 25</button>
+            </btndiv>
         </div>
         <div class="col-lg-6">
-            <div id="graph3"></div>
+            <div id="graph3">
+                <h3>Hover for Actor-Director Duos!</h3>
+            </div>
         </div>
     </div>
     <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
 </body>
+<div>
+    <h1>
+        WRITTEN QUESTION RESPONSES
+    </h1>
+    <p>
+    </br>
+        1) 
+    </br>   
+    My first graph displays each genre along the y-axis with bars extending from left to right. The length of the bar indicates the number of titles that fall under that specific genre.
+    To view the exact count of titles under a specific genre, one can hover over the text that reads "hover here." Furthermore, the graph is sorted by counts so that we can compare the 
+    genres with the highest and lowest title counts.
+    </br>
+    </br>
+    My second graph is formatted in a similar way to the first. The release year is located on the y-axis with bars extending from left to right and longer bars
+    indicating longer average runtime for that release year. The graph starts by displaying the 15 release years with the longest average runtime, but the graph
+    has an interactive element where users can pick if they want to view the top 5, 10, 15, 20, or 25 release years, and the graph is adjusted accordingly. The graph is sorted by average runtime
+    so that we can view the years with the longest average runtime.
+    </br>
+    </br>
+    My third graph is a line plot that contains actor-director duos along the y-axis. The further to the right, that a specific duo's point extends, the more movies they have worked on 
+    together. Furthermore, this graph also contains a hovering feature because it can be difficult to read the duo's names otherwise. Using a line plot allows
+    users to view which duos have the most movies together quite easily especially with the hover feature. For viewing reasons, I decided to display the top 50 actor-director duos.
+    </br>
+    </br>
+    2)
+    </br> 
+    Pro 1) Once I made the first bar graph, making the second bar graph was much easier. In other words, while there is a learning curve, once I got the hang of a certain aspect of it, translating that
+    aspect to other data was not overly challenging. Furthermore, once I got the hang of the basics, playing around with additional non-essential components made my graphs appear much cleaner.
+    </br>
+    Pro 2) The built-in reading of csv files made data processing very doable. I could easily access the data that I needed simply using Javascript and did not even find a need to use pandas in python.
+    </br>
+    Pro 3) The various options for displaying data make finding the best representation for data much easier. For example, while I didn't have time to experiment with too many different types, I was able to use
+    bar graphs and a line plot which are better at displaying data in different situations. That goes for all the visualization options contained in D3 such as flow charts, heatmaps, scatterplots, etc. D3 ensures that your 
+    data can be represented exactly how you want it to be.
+    </br>
+    </br>
+    3)
+    </br>
+    Con 1) D3 is not very intuitive to learn at first. There were a lot of moving parts that made understanding exactly how it works difficult at first. It was slightly frustrating how little progress
+    I made in the beginning.
+    </br>
+    Con 2) There are a few visuzalization types that have very little documentation on how to use them. For example, I was exploring the different visualizations and was interested in using a network, but the D3 website simply
+    said that the tutorial page was a work in progress, so I decided against using it. 
+    </br>
+    Con 3) For me at least, Javascript would never be my go to programming language. However, D3 is very much Javascript based. So, at least in terms of personal preference, this was not ideal. From the languages I am comfortable with, I find
+    Javascript the least intuitive.
+    </br>
+    </br>
+    4)
+    </br>
+    I feel that the way I associated each graph with a certain color (graph 1: blue, graph 2: green, graph 3: red) makes my visualizations more accessible. In addition, I even incorporated this color scheme into the hovering 
+    features of graphs 1 and 3. Furthermore, I feel that adding a hover feature to graph 3 makes it more accessible given that it might otherwise appear too crowded. In general, the addition of a hover feature allows users
+    to view individual data points with far more ease. I also made it clear which graphs have the hover feature implemented with a heading. Something that could make my visualizations more accessible would be text explanations of
+    exactly what each graph is showing in case someone with a visual handicap is using a screenreader. Another thing I could have include is a link to the full dataset so that users who want clarification
+    on certain points are able to get this clarity.
+    </br>
+    </br>
+    5)
+    </br>
+    When I was initially deciding what type of visualization to use for a specific question, I could have asked myself why I was choosing that visualization and included that reason
+    in a paragraph accompanying the visualization. I feel that this could make the question and my solution to the question much clearer for the user. Furthermore, I could have put myself in the shoes of someone who might require more information than I would
+    to understand a visualization (such as someone with a visual impairment). This could help me add features that would improve accessibility in all senses. The only real factors that was holding me back 
+    from taking these steps was a lack of time and perhaps a lack of familiarity with D3. I feel that with an abundance of time, I could make my visualizations far more accessible than they currently are. Furthermore,
+    with this time, I would gain a better understanding of D3, which could also contribute to improved accessibility.
+    </p>
+</div>
 </html>
